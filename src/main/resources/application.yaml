@@ -1,0 +1,19 @@
+payload.viewed-by-generator:
+  queueName: test.q
+  period: PT10S
+  batchSize: 5
+spring:
+  artemis:
+    # these depend on the remote
+    mode: native
+    host: 10.163.138.98
+    port: 61616
+    user: artemis
+    password:
+
+logging:
+  level:
+    root: WARN
+    org.apache.activemq: DEBUG
+    org.springframework: INFO
+    blah: DEBUG

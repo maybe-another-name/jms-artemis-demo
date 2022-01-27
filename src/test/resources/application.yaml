@@ -1,0 +1,18 @@
+artemis:
+  broker-url: vm://0
+
+queue-name: queue.01
+spring:
+  activemq:
+    broker-url: tcp://localhost:61616
+    packages.trust-all: true
+  artemis:
+    user: user
+    password: password
+
+logging:
+  level:
+    root: WARN
+    org.apache.activemq: INFO
+    org.springframework: INFO
+    blah: DEBUG
